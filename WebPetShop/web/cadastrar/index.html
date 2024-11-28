@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Cadastro de Pets</title>
+    <style>
+        /* Definindo a fonte para a página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Container do formulário */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        /* Título */
+        h1 {
+            color: #4CAF50;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Estilo dos campos de entrada */
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Botão de envio */
+        input[type="submit"] {
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Efeito de hover no botão */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo da imagem (logo) */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        /* Estilo geral para textos */
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo do pet shop -->
+        <div class="image-container">
+            <img src="../imagens/logo.jpeg" alt=""/>
+        </div>
+
+        <!-- Título do formulário -->
+        <h1>CADASTRO DE PET</h1>
+
+        <!-- Formulário -->
+        <form name="frmPet" method="post" action="cadastrar.jsp">
+            <label for="nome">NOME DO PET:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="raca">RAÇA:</label>
+            <input type="text" id="raca" name="raca" required>
+
+            <label for="nomedono">NOME DO DONO:</label>
+            <input type="text" id="nomedono" name="nomedono" required>
+
+            <label for="telefone">TELEFONE:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <input type="submit" value="CADASTRAR PET">
+        </form>
+    </div>
+
+</body>
+</html>

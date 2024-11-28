@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Tela Principal</title>
+    <style>
+        /* Estilos gerais da página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        /* Container principal */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        /* Estilo para a logo */
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Título */
+        h1 {
+            color: #4CAF50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para os links transformados em botões */
+        .btn {
+            font-size: 16px;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border-radius: 5px;
+            width: 230px;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        /* Efeito de hover para os botões */
+        .btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Efeito de pressionar o botão */
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Botão de voltar ao menu */
+        .btn-back {
+            background-color: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .btn-back:hover {
+            background-color: #e64a19;
+        }
+
+        /* Adicionando um espaçamento entre as opções com gap menor */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;  /* Reduziu o espaçamento entre os botões */
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo -->
+        <img src="imagens/logo.jpeg" alt=""/>
+
+        <!-- Título -->
+        <h1>BEM-VINDO AO PETSHOP</h1>
+
+        <!-- Links para navegação (Agora são botões) -->
+        <div class="links">
+            <a href="cadastrar/index.html" class="btn">CADASTRAR PET</a>
+            <a href="consultatel/index.html" class="btn">CONSULTA REGISTRO (TELEFONE)</a>
+            <a href="consultageral/consulta geral.jsp" class="btn">CONSULTA GERAL (REGISTROS)</a>
+            <a href="exclusao/index.html" class="btn">EXCLUSÃO POR IDENTIFICAÇÃO</a>
+            <a href="alterar/index.html" class="btn">ALTERAÇÃO DO CADASTRO</a>
+        </div>
+    </div>
+
+</body>
+</html>

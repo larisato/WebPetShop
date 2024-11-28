@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Pet Shop - Pesquisa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <style>
+            /* Estilos gerais para o corpo da página */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f7fc; /* Cor de fundo suave */
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* Preenche a tela inteira */
+                color: #333;
+            }
+
+            /* Estilo para o contêiner do formulário */
+            .form-container {
+                background-color: white;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                max-width: 500px; /* Limita a largura do formulário */
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 24px;
+                color: #4CAF50; /* Cor verde */
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-size: 16px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 8px;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-bottom: 20px;
+                box-sizing: border-box; /* Inclui o padding no tamanho total */
+            }
+
+            input[type="submit"] {
+                padding: 10px 20px;
+                background-color: #4CAF50; /* Cor verde */
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #45a049; /* Cor mais escura quando o botão é pressionado */
+            }
+
+            /* Adicionando margens e ajustes */
+            p {
+                margin-bottom: 0;
+            }
+
+        </style>
+    </head>
+    <body>
+<div class="form-container">
+            <h1>CONSULTA REGISTRO PELO TELEFONE</h1>
+            <form name="frmPet" method="post" action="consultaRegTel.jsp">
+                <label for="telefone">DIGITE O NÚMERO DE TELEFONE:</label>
+                <input type="text" name="telefone" id="telefone" required> <!-- Input para telefone -->
+                <input type="submit" value="CONSULTAR">
+            </form>
+        </div>
+    </body>
+</html>
